@@ -1,4 +1,5 @@
-eyes = input("enter the character that will be displayed as the robot's eyes\n")
+eyes = input("enter the character that will be displayed as the robot's eyes")
+print("")
 print("########")
 print("#",eyes,"",eyes,"#")
 print("# ---- #")
