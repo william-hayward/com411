@@ -1,2 +1,2 @@
 language = "python3"
-run = "python simple_message.py"
+run = "python basics/output/ascii-art.py"
