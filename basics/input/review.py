@@ -16,8 +16,6 @@ print("Shield: ", (shield_symbol*shield))
 print("")
 print("setting robot...\n")
 
-
-
 print("   ########")
 print("   #",eyes,"",eyes,"#")
 print("   # ---- #      Hello",name+"! I am Beep! A robot!")
@@ -32,4 +30,3 @@ print("   #  ##  #")
 print("   #  ##  #")
 print("   #  ##  #")
 print("   ########")
-
