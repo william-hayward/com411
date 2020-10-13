@@ -1,5 +1,5 @@
 def identify():
-  respose = input("What lies before us? ")
+  response = input("What lies before us? ")
   if response == "a large boulder":
     print("It's time to run!")
   else:
