@@ -50,6 +50,21 @@ import basics.repetitions.while_loop.while_loop_simple as while_loop_simple
 import basics.repetitions.while_loop.while_loop_ascii as while_loop_ascii
 import basics.repetitions.while_loop.while_loop_len as while_loop_len 
 
+#functions file 
+import basics.functions.ascii_character as ascii_character
+import basics.functions.ascii_code as ascii_code
+import basics.functions.function_calls as function_calls
+import basics.functions.function_with_loop as function_with_loop
+import basics.functions.function_with_nesting as function_with_nesting
+import basics.functions.function_with_parameter as function_with_parameter
+import basics.functions.function_with_parameters as function_with_parameters
+import basics.functions.multiple_functions as multiple_functions
+import basics.functions.return_values as return_values
+import basics.functions.simple_function as simple_function
+
+#modules file
+import basics.modules.guess_the_number as guess_the_number
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -156,6 +171,39 @@ def run_block_a():
     elif (response == "while_loop_len"):
         print("")
         while_loop_len.run()
+    elif (response == "ascii_character"):
+        print("")
+        ascii_character.run()
+    elif (response == "ascii_code"):
+        print("")
+        ascii_code.run()
+    elif (response == "function_calls"):
+        print("")
+        function_calls.run()
+    elif (response == "function_with_loop"):
+        print("")
+        function_with_loop.run()
+    elif (response == "function_with_nesting"):
+        print("")
+        function_with_nesting.run()
+    elif (response == "function_with_parameter"):
+        print("")
+        function_with_parameter.run()
+    elif (response == "function_with_parameters"):
+        print("")
+        function_with_parameters.run()
+    elif (response == "multiple_functions"):
+        print("")
+        multiple_functions.run()
+    elif (response == "return_values"):
+        print("")
+        return_values.run()
+    elif (response == "simple_function"):
+        print("")
+        simple_function.run()
+    elif (response == "guess_the_number"):
+        print("")
+        guess_the_number.run()
 
 
 

@@ -59,5 +59,3 @@ def repeated(word):
     else:
       print(word.upper())
   
-
-run()

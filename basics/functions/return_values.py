@@ -18,5 +18,3 @@ def run():
   elif calculation.lower() == "average":
     answer = calc_avg_weight(bop_weight, beep_weight)
     print("\nThe average weight of Beep and Bop is: {:0.2f}".format(answer))
-
-run()
