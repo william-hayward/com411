@@ -1,13 +1,16 @@
+#output file
 import basics.output.simple_message as simple_message
 import basics.output.multiline_message as multiline_message
 import basics.output.ascii_art as ascii_art 
 import basics.output.escape_characters as escape_characters
 
+#input file
 import basics.input.data_types as data_types
 import basics.input.review as input_review
 import basics.input.string_operators as string_operators
 import basics.input.user_input as user_input
 
+#decisions file - simple decisions
 import basics.decisions.simple_decisions.comparison_operator as comparison_operator
 import basics.decisions.simple_decisions.counter as counter
 import basics.decisions.simple_decisions.if_elif_else as if_elif_else
@@ -15,14 +18,18 @@ import basics.decisions.simple_decisions.if_else as if_else
 import basics.decisions.simple_decisions.if_ as if_
 import basics.decisions.simple_decisions.modulo_operator as modulo_operator
 
+#decisions file - multiple decisions
 import basics.decisions.multiple_conditions.and_operator as and_operator
 import basics.decisions.multiple_conditions.or_operator as or_operator
 
+#decisions file - nested decisions
 import basics.decisions.nested_decisions.nestception as nestception
 import basics.decisions.nested_decisions.nested as nested 
 
+#decisions file - review of decisions
 import basics.decisions.review as decisions_review
 
+#repetition file - for loops
 import basics.repetitions.for_loop.characters as characters
 import basics.repetitions.for_loop.count_down as count_down
 import basics.repetitions.for_loop.membership_operators as membership_operators
@@ -30,6 +37,20 @@ import basics.repetitions.for_loop.range_ as range_
 import basics.repetitions.for_loop.for_loop_reverse as for_loop_reverse
 import basics.repetitions.for_loop.for_loop_simple as for_loop_simple
 
+#repetition file - nested loops
+import basics.repetitions.nested_loop.nested_loop_nested as nested_loop_nested
+import basics.repetitions.nested_loop.nesting as nesting
+
+#repetition file - while loops 
+import basics.repetitions.while_loop.count as count
+import basics.repetitions.while_loop.factorial as factorial
+import basics.repetitions.while_loop.sum_user_numbers as sum_user_numbers
+import basics.repetitions.while_loop.sum100 as sum100
+import basics.repetitions.while_loop.while_loop_simple as while_loop_simple
+import basics.repetitions.while_loop.while_loop_ascii as while_loop_ascii
+import basics.repetitions.while_loop.while_loop_len as while_loop_len 
+
+#runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
     response = input()
@@ -108,6 +129,33 @@ def run_block_a():
     elif (response == "for_loop_simple"):
         print("")
         for_loop_simple.run()
+    elif (response == "nested_loop_nested"):
+        print("")
+        nested_loop_nested.run()
+    elif (response == "nesting"):
+        print("")
+        nesting.run()
+    elif (response == "count"):
+        print("")
+        count.run()
+    elif (response == "factorial"):
+        print("")
+        factorial.run()
+    elif (response == "sum_user_numbers"):
+        print("")
+        sum_user_numbers.run()
+    elif (response == "sum100"):
+        print("")
+        sum100.run()
+    elif (response == "while_loop_simple"):
+        print("")
+        while_loop_simple.run()
+    elif (response == "while_loop_ascii"):
+        print("")
+        while_loop_ascii.run()
+    elif (response == "while_loop_len"):
+        print("")
+        while_loop_len.run()
 
 
 
