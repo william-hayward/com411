@@ -1,2 +1,3 @@
 language = "python3"
-run = "python basics/input/review.py"
+
+run = "python main.py"

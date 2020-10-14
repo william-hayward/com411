@@ -1,3 +1,4 @@
 #Display a simple message to the standard output
-print("System Faliure Imminent!")
-print()
+def run():
+  print("System Faliure Imminent!\n")
+

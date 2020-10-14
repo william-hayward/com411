@@ -3,7 +3,6 @@ def run():
   print("\nReversing...\n")
   print("The phrase is: ",end="")
 
-  reversed = ""
-  for i in phrase:
-    reversed = i + reversed
-  print(reversed)
+  for i in range(len(phrase)-1, -1, -1):
+    print(phrase[i], end="")
+    
