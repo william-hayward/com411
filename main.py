@@ -71,6 +71,9 @@ import data.lists.index_list as index_list
 import data.lists.iterate_list as iterate_list
 import data.lists.populate_list as populate_list
 
+#tuples file
+import data.tuples.simple_tuple as simple_tuple
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -210,6 +213,7 @@ def run_block_a():
     elif (response == "guess_the_number"):
         print("")
         guess_the_number.run()
+    
 
 def run_block_b():
   print("Which program in 'Block B: Data' do you wish to run?")
@@ -226,6 +230,9 @@ def run_block_b():
   elif (response == "populate_list"):
       print("")
       populate_list.run()
+  elif (response == "simple_tuple"):
+      print("")
+      simple_tuple.run()
 
 def run():
     is_running = True
