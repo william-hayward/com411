@@ -69,6 +69,7 @@ import basics.modules.guess_the_number as guess_the_number
 import data.lists.simple_list as simple_list
 import data.lists.index_list as index_list
 import data.lists.iterate_list as iterate_list
+import data.lists.populate_list as populate_list
 
 #runs everything in the basics file
 def run_block_a():
@@ -222,6 +223,9 @@ def run_block_b():
   elif (response == "iterate_list"):
       print("")
       iterate_list.run()
+  elif (response == "populate_list"):
+      print("")
+      populate_list.run()
 
 def run():
     is_running = True
