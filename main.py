@@ -65,6 +65,9 @@ import basics.functions.simple_function as simple_function
 #modules file
 import basics.modules.guess_the_number as guess_the_number
 
+#lists file
+import data.lists.simple_list as simple_list
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -205,7 +208,12 @@ def run_block_a():
         print("")
         guess_the_number.run()
 
-
+def run_block_b():
+  print("Which program in 'Block B: Data' do you wish to run?")
+  response = input()
+  if (response == "simple_list"):
+      print("")
+      simple_list.run()
 
 def run():
     is_running = True
@@ -213,12 +221,16 @@ def run():
     while(is_running):
         print("\nWhat would you like to do?")
         print("[a] Run 'Block A: Basics' programs")
+        print("[b] Run 'Block B: Data' programs")
         print("[q] Quit")
         response = input()
 
         if (response == "a"):
             print("")
             run_block_a()
+        elif (response == "b"):
+            print("")
+            run_block_b()
         elif (response == "q"):
             break
         else:
