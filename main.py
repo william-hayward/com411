@@ -73,6 +73,8 @@ import data.lists.populate_list as populate_list
 
 #tuples file
 import data.tuples.simple_tuple as simple_tuple
+import data.tuples.function_tuple as function_tuple
+
 
 #runs everything in the basics file
 def run_block_a():
@@ -233,6 +235,9 @@ def run_block_b():
   elif (response == "simple_tuple"):
       print("")
       simple_tuple.run()
+  elif (response == "function_tuple"):
+      print("")
+      function_tuple.run()
 
 def run():
     is_running = True
