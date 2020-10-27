@@ -79,6 +79,7 @@ import data.tuples.nested_tuple as nested_tuple
 #sets file
 import data.sets.simple_set as simple_set
 import data.sets.set_from_list as set_from_list
+import data.sets.sorted_set as sorted_set
 
 #runs everything in the basics file
 def run_block_a():
@@ -251,6 +252,9 @@ def run_block_b():
   elif (response == "set_from_list"):
       print("")
       set_from_list.run()
+  elif (response == "sorted_set"):
+      print("")
+      sorted_set.run()
 
 
 def run():
