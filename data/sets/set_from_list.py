@@ -12,3 +12,5 @@ def run():
   for count in observations:
     observations_set.add((count, observations.count(count)))
   print(observations_set)
+  for count, repeats in observations_set:
+    print("{} observed {} times.".format(count, repeats))
