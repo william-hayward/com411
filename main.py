@@ -76,6 +76,10 @@ import data.tuples.simple_tuple as simple_tuple
 import data.tuples.function_tuple as function_tuple
 import data.tuples.nested_tuple as nested_tuple
 
+#sets file
+import data.sets.simple_set as simple_set
+import data.sets.set_from_list as set_from_list
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -241,6 +245,13 @@ def run_block_b():
   elif (response == "nested_tuple"):
       print("")
       nested_tuple.run()
+  elif (response == "simple_set"):
+      print("")
+      simple_set.run()
+  elif (response == "set_from_list"):
+      print("")
+      set_from_list.run()
+
 
 def run():
     is_running = True
