@@ -83,6 +83,7 @@ import data.sets.sorted_set as sorted_set
 
 #dictionary file
 import data.dicts.simple_dict as simple_dict
+import data.dicts.nested_dicts as nested_dicts
 
 #runs everything in the basics file
 def run_block_a():
@@ -261,6 +262,9 @@ def run_block_b():
   elif (response == "simple_dict"):
       print("")
       simple_dict.run()
+  elif (response == "nested_dicts"):
+      print("")
+      nested_dicts.run()
 
 
 def run():
