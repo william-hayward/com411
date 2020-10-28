@@ -81,6 +81,9 @@ import data.sets.simple_set as simple_set
 import data.sets.set_from_list as set_from_list
 import data.sets.sorted_set as sorted_set
 
+#dictionary file
+import data.dicts.simple_dict as simple_dict
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -255,6 +258,9 @@ def run_block_b():
   elif (response == "sorted_set"):
       print("")
       sorted_set.run()
+  elif (response == "simple_dict"):
+      print("")
+      simple_dict.run()
 
 
 def run():
