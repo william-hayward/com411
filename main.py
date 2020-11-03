@@ -85,6 +85,9 @@ import data.sets.sorted_set as sorted_set
 import data.dicts.simple_dict as simple_dict
 import data.dicts.nested_dicts as nested_dicts
 
+#file file
+import data.files.cwd as cwd
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -265,7 +268,9 @@ def run_block_b():
   elif (response == "nested_dicts"):
       print("")
       nested_dicts.run()
-
+  elif (response == "cwd"):
+      print("")
+      cwd.run()
 
 def run():
     is_running = True
