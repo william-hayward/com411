@@ -87,6 +87,7 @@ import data.dicts.nested_dicts as nested_dicts
 
 #file file
 import data.files.cwd as cwd
+import data.files.read as read
 
 #runs everything in the basics file
 def run_block_a():
@@ -271,6 +272,9 @@ def run_block_b():
   elif (response == "cwd"):
       print("")
       cwd.run()
+  elif (response == "read"):
+      print("")
+      read.run()
 
 def run():
     is_running = True
