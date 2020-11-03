@@ -89,6 +89,7 @@ import data.dicts.nested_dicts as nested_dicts
 import data.files.cwd as cwd
 import data.files.read as read
 import data.files.write as write
+import data.files.generate as generate
 
 #runs everything in the basics file
 def run_block_a():
@@ -279,6 +280,9 @@ def run_block_b():
   elif (response == "write"):
       print("")
       write.run()
+  elif (response == "generate"):
+      print("")
+      generate.run()
 
 def run():
     is_running = True
