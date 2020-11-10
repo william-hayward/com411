@@ -91,6 +91,9 @@ import data.files.read as read
 import data.files.write as write
 import data.files.generate as generate
 
+#plots file
+import visual.plots.simple as csimple
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -284,6 +287,13 @@ def run_block_b():
       print("")
       generate.run()
 
+def run_block_c():
+  print("Which program in 'Block C: Visual' do you wish to run?")
+  response = input()
+  if (response == "csimple"):
+      print("")
+      csimple.run()
+
 def run():
     is_running = True
 
@@ -291,6 +301,7 @@ def run():
         print("\nWhat would you like to do?")
         print("[a] Run 'Block A: Basics' programs")
         print("[b] Run 'Block B: Data' programs")
+        print("[c] Run 'Block C: Visual' programs")
         print("[q] Quit")
         response = input()
 
@@ -300,6 +311,9 @@ def run():
         elif (response == "b"):
             print("")
             run_block_b()
+        elif (response == "c"):
+            print("")
+            run_block_c()
         elif (response == "q"):
             break
         else:
