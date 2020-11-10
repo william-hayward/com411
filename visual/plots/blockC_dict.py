@@ -14,8 +14,9 @@ def run():
     num_of_lines = int(input("How many lines do you want to display? "))
     for count in range(num_of_lines):
       values = data()
-      x = [0, rnd.randrange(1, 10)]
-      y = [0, rnd.randrange(1, 10)]
+      x = rnd.sample(range(1,10), num_of_lines)
+      y = rnd.sample(range(1,10), num_of_lines)
+
       
       plt.plot(x, y, f"{values['colour']}{values['style']}{values['marker']}")
     plt.show()
