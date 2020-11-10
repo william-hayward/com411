@@ -93,6 +93,7 @@ import data.files.generate as generate
 
 #plots file
 import visual.plots.simple as csimple
+import visual.plots.squares as squares
 
 #runs everything in the basics file
 def run_block_a():
@@ -293,6 +294,9 @@ def run_block_c():
   if (response == "csimple"):
       print("")
       csimple.run()
+  elif (response == "squares"):
+      print("")
+      squares.run()
 
 def run():
     is_running = True
