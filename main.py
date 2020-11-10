@@ -95,6 +95,7 @@ import data.files.generate as generate
 import visual.plots.simple as csimple
 import visual.plots.squares as squares
 import visual.plots.path as path
+import visual.plots.blockC_dict as Cdict
 
 #runs everything in the basics file
 def run_block_a():
@@ -301,6 +302,9 @@ def run_block_c():
   elif (response == "path"):
       print("")
       path.run()
+  elif (response == "Cdict"):
+      print("")
+      Cdict.run()
 
 def run():
     is_running = True
