@@ -99,6 +99,8 @@ import visual.plots.blockC_dict as Cdict
 
 #subplots folder
 import visual.subplots.simple_subplot as simple_subplot
+import visual.subplots.subplots_csv as subplots_csv
+import visual.subplots.titanic as titanic
 
 #runs everything in the basics file
 def run_block_a():
@@ -311,6 +313,14 @@ def run_block_c():
   elif (response == "simple_subplot"):
       print("")
       simple_subplot.run()
+  elif (response == "subplots_csv"):
+      print("")
+      subplots_csv.run()
+  elif (response == "titanic"):
+      print("")
+      titanic.run()
+
+
 
 def run():
     is_running = True
