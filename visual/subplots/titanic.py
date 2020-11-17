@@ -26,4 +26,3 @@ def run():
   plt.show()
 
 
-  
