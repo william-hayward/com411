@@ -97,6 +97,9 @@ import visual.plots.squares as squares
 import visual.plots.path as path
 import visual.plots.blockC_dict as Cdict
 
+#subplots folder
+import visual.subplots.simple_subplot as simple_subplot
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -305,6 +308,9 @@ def run_block_c():
   elif (response == "Cdict"):
       print("")
       Cdict.run()
+  elif (response == "simple_subplot"):
+      print("")
+      simple_subplot.run()
 
 def run():
     is_running = True
