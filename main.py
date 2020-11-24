@@ -102,6 +102,9 @@ import visual.subplots.simple_subplot as simple_subplot
 import visual.subplots.subplots_csv as subplots_csv
 import visual.subplots.titanic as titanic
 
+#animations folder
+import visual.animations.simple_animation as animation
+
 #runs everything in the basics file
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -319,6 +322,9 @@ def run_block_c():
   elif (response == "titanic"):
       print("")
       titanic.run()
+  elif (response == "animation"):
+      print("")
+      animation.run()
 
 
 
