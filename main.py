@@ -104,6 +104,8 @@ import visual.subplots.titanic as titanic
 
 #animations folder
 import visual.animations.simple_animation as animation
+import visual.animations.marker as marker
+
 
 #runs everything in the basics file
 def run_block_a():
@@ -325,6 +327,10 @@ def run_block_c():
   elif (response == "animation"):
       print("")
       animation.run()
+  elif (response == "marker"):
+      print("")
+      marker.run()
+
 
 
 
