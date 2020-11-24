@@ -11,7 +11,8 @@ def run():
   import matplotlib.animation as animation
   import numpy as np
 
+  global fig
   fig, ax = plt.subplots()
-  simple_animation = animation.FuncAnimation(fig, animate, frames = 10, interval = 10)
+  simple_animation = animation.FuncAnimation(fig, animate, frames = 720, interval = 10)
   plt.show()
 
