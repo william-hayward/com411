@@ -107,6 +107,7 @@ import visual.animations.simple_animation as animation
 import visual.animations.marker as marker
 import visual.animations.sine as sine
 import visual.animations.shift_sine as shift_sine
+import visual.animations.animation_squares as square_animation
 
 
 #runs everything in the basics file
@@ -338,7 +339,9 @@ def run_block_c():
   elif (response == "shift_sine"):
       print("")
       shift_sine.run()
-
+  elif (response == "square_animation"):
+      print("")
+      square_animation.run()
 
 
 
