@@ -106,6 +106,7 @@ import visual.subplots.titanic as titanic
 import visual.animations.simple_animation as animation
 import visual.animations.marker as marker
 import visual.animations.sine as sine
+import visual.animations.shift_sine as shift_sine
 
 
 #runs everything in the basics file
@@ -334,6 +335,9 @@ def run_block_c():
   elif (response == "sine"):
       print("")
       sine.run()
+  elif (response == "shift_sine"):
+      print("")
+      shift_sine.run()
 
 
 
