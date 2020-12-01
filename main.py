@@ -111,8 +111,7 @@ import visual.animations.animation_squares as square_animation
 
 #oop folder
 import objects.oop.human as human
-import objects.oop.magic_methods as methods
-
+import objects.oop.robot as robot
 
 #runs everything in the basics file
 def run_block_a():
@@ -353,9 +352,11 @@ def run_block_d():
   if (response == "human"):
       print("")
       human.run()
-  if (response == "methods"):
+  if (response == "robot"):
       print("")
-      methods.run()
+      robot.run()
+  
+
 
 
 def run():
