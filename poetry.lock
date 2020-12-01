@@ -43,6 +43,14 @@ version = "1.19.4"
 
 [[package]]
 category = "main"
+description = "A corpus of object images"
+name = "objects"
+optional = false
+python-versions = "*"
+version = "0.3.1"
+
+[[package]]
+category = "main"
 description = "Python Imaging Library (Fork)"
 name = "pillow"
 optional = false
@@ -89,7 +97,7 @@ matplotlib = "*"
 numpy = "*"
 
 [metadata]
-content-hash = "c2f13e62a48005531c0b26f0271a97a4537f6ba4a4b0f7a3c5f7ec8ddfe793aa"
+content-hash = "cb0a4a35d29e5b838810e95469bad4a99fd3d4a9175fc16cc63135bcf7cfc98b"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -193,6 +201,9 @@ numpy = [
     {file = "numpy-1.19.4-cp39-cp39-win_amd64.whl", hash = "sha256:4377e10b874e653fe96985c05feed2225c912e328c8a26541f7fc600fb9c637b"},
     {file = "numpy-1.19.4-pp36-pypy36_pp73-manylinux2010_x86_64.whl", hash = "sha256:2a2740aa9733d2e5b2dfb33639d98a64c3b0f24765fed86b0fd2aec07f6a0a08"},
     {file = "numpy-1.19.4.zip", hash = "sha256:141ec3a3300ab89c7f2b0775289954d193cc8edb621ea05f99db9cb181530512"},
+]
+objects = [
+    {file = "objects-0.3.1.tar.gz", hash = "sha256:c661db0a90b63e27ec9cd51e80f2b53c2df4d091a6e0069b33d8904f90745b8a"},
 ]
 pillow = [
     {file = "Pillow-8.0.1-cp36-cp36m-macosx_10_10_x86_64.whl", hash = "sha256:b63d4ff734263ae4ce6593798bcfee6dbfb00523c82753a3a03cbc05555a9cc3"},

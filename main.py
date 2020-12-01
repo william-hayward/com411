@@ -112,6 +112,7 @@ import visual.animations.animation_squares as square_animation
 #oop folder
 import objects.oop.human as human
 import objects.oop.robot as robot
+import objects.oop.planet as planet
 
 #runs everything in the basics file
 def run_block_a():
@@ -355,6 +356,9 @@ def run_block_d():
   if (response == "robot"):
       print("")
       robot.run()
+  if (response == "planet"):
+      print("")
+      planet.run()
   
 
 
