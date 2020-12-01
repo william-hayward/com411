@@ -109,6 +109,9 @@ import visual.animations.sine as sine
 import visual.animations.shift_sine as shift_sine
 import visual.animations.animation_squares as square_animation
 
+#oop folder
+import objects.oop.human as human
+
 
 #runs everything in the basics file
 def run_block_a():
@@ -343,7 +346,12 @@ def run_block_c():
       print("")
       square_animation.run()
 
-
+def run_block_d():
+  print("Which program in 'Block D: Objects programs' do you wish to run?")
+  response = input()
+  if (response == "human"):
+      print("")
+      human.run()
 
 
 def run():
@@ -354,6 +362,7 @@ def run():
         print("[a] Run 'Block A: Basics' programs")
         print("[b] Run 'Block B: Data' programs")
         print("[c] Run 'Block C: Visual' programs")
+        print("[d] Run 'Block D: Objects' programs")
         print("[q] Quit")
         response = input()
 
@@ -366,6 +375,9 @@ def run():
         elif (response == "c"):
             print("")
             run_block_c()
+        elif (response == "d"):
+            print("")
+            run_block_d()
         elif (response == "q"):
             break
         else:
