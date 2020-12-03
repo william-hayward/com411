@@ -11,11 +11,11 @@ class Universe:
 
   def generate(self):
     planet = Planet()
-    for count in range(random.randint(0 ,10)):
+    for count in range(random.randint(0, 10)):
       robot = Robot(f"Robot{count}")
       planet.add_robot(robot) 
 
-    for count in range(random.randint(0 ,10)):
+    for count in range(random.randint(0, 10)):
       human = Human(f"Human{count}")
       planet.add_human(human) 
 
@@ -24,12 +24,16 @@ class Universe:
   def show_populations(self):
     fig, (ax1, ax2) = plt.subplots(1, 2, sharey = "all")
     
+    plt.suptitle("Population of Humans and Robots In A Planet")
+
     ax1.set_xlim(0, 2)
     ax1.set_ylim(0, 15)
     ax1.set_xlabel("Humans")
     ax1.set_ylabel("Population")
     ax1.set_xticks([])
-    ax1.bar(1, 10)
+
+    #len of humans in dict for y value - dont work
+    ax1.bar(1, 9)
 
     ax2.set_xlim(0, 2)
     ax2.set_ylim(0, 15)
@@ -54,3 +58,4 @@ if (__name__ == "__main__"):
   print(universe.__str__())
   print("")
   universe.show_populations()
+  
