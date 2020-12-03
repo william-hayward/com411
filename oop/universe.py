@@ -8,16 +8,20 @@ from planet import Planet
 class Universe:
   def __init__(self):
     self.planets = []
+    self.humans = 0
+    self.robots = 0
 
   def generate(self):
     planet = Planet()
     for count in range(random.randint(0, 10)):
       robot = Robot(f"Robot{count}")
-      planet.add_robot(robot) 
+      planet.add_robot(robot)
+      self.robots = self.robots + 1 
 
     for count in range(random.randint(0, 10)):
       human = Human(f"Human{count}")
-      planet.add_human(human) 
+      planet.add_human(human)
+      self.humans = self.humans + 1 
 
     self.planets.append(planet)
   
@@ -33,7 +37,7 @@ class Universe:
     ax1.set_xticks([])
 
     #len of humans in dict for y value - dont work
-    ax1.bar(1, 10)
+    ax1.bar(1, self.humans)
 
     ax2.set_xlim(0, 2)
     ax2.set_ylim(0, 15)
@@ -41,7 +45,7 @@ class Universe:
     ax2.set_xticks([])
 
     #len of robots in dict for y value - dont work
-    ax2.bar(1, 10)
+    ax2.bar(1, self.robots)
 
     plt.tight_layout
     plt.show()
