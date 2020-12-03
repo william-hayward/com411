@@ -36,7 +36,7 @@ class Universe:
     ax1.set_ylabel("Population")
     ax1.set_xticks([])
 
-    #len of humans in dict for y value - dont work
+    #len of humans in dict for y value - cant get it to retrieve the length of the dict
     ax1.bar(1, self.humans)
 
     ax2.set_xlim(0, 2)
@@ -44,7 +44,7 @@ class Universe:
     ax2.set_xlabel("Robots")
     ax2.set_xticks([])
 
-    #len of robots in dict for y value - dont work
+    #len of robots in dict for y value - cant get it to retrieve the length of the dict
     ax2.bar(1, self.robots)
 
     plt.tight_layout
