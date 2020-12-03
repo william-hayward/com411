@@ -30,6 +30,7 @@ class Universe:
     
     plt.suptitle("Population of Humans and Robots In A Planet")
 
+#--------Human Plot--------
     ax1.set_xlim(0, 2)
     ax1.set_ylim(0, 15)
     ax1.set_xlabel("Humans")
@@ -39,6 +40,7 @@ class Universe:
     #len of humans in dict for y value - cant get it to retrieve the length of the dict
     ax1.bar(1, self.humans)
 
+#--------Robot Plot--------
     ax2.set_xlim(0, 2)
     ax2.set_ylim(0, 15)
     ax2.set_xlabel("Robots")
