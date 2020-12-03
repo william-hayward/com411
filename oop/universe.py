@@ -33,12 +33,14 @@ class Universe:
     ax1.set_xticks([])
 
     #len of humans in dict for y value - dont work
-    ax1.bar(1, 9)
+    ax1.bar(1, 10)
 
     ax2.set_xlim(0, 2)
     ax2.set_ylim(0, 15)
     ax2.set_xlabel("Robots")
     ax2.set_xticks([])
+
+    #len of robots in dict for y value - dont work
     ax2.bar(1, 10)
 
     plt.tight_layout
