@@ -13,12 +13,12 @@ class Universe:
 
   def generate(self):
     planet = Planet()
-    for count in range(random.randint(0, 10)):
+    for count in range(random.randint(0, 100)):
       robot = Robot(f"Robot{count}")
       planet.add_robot(robot)
       self.robots = self.robots + 1 
 
-    for count in range(random.randint(0, 10)):
+    for count in range(random.randint(0, 100)):
       human = Human(f"Human{count}")
       planet.add_human(human)
       self.humans = self.humans + 1 
@@ -32,7 +32,7 @@ class Universe:
 
 #--------Human Plot--------
     ax1.set_xlim(0, 2)
-    ax1.set_ylim(0, 15)
+    ax1.set_ylim(0, 110)
     ax1.set_xlabel("Humans")
     ax1.set_ylabel("Population")
     ax1.set_xticks([])
@@ -42,7 +42,7 @@ class Universe:
 
 #--------Robot Plot--------
     ax2.set_xlim(0, 2)
-    ax2.set_ylim(0, 15)
+    ax2.set_ylim(0, 110)
     ax2.set_xlabel("Robots")
     ax2.set_xticks([])
 
@@ -61,7 +61,7 @@ class Universe:
 if (__name__ == "__main__"):
   universe = Universe()
   universe.generate()
-  print(universe.__repr__())
+  #print(universe.__repr__())
   print("")
   print(universe.__str__())
   print("")
