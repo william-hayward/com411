@@ -54,7 +54,7 @@ class Universe:
     return f"universe(planets={self.planets})"
 
   def __str__(self):
-    return f"The universe contains {len(self.planets)} planets"
+    return f"The universe contains {len(self.planets)} planets, {self.robots} robots and {self.humans} humans"
 
 if (__name__ == "__main__"):
   universe = Universe()
